@@ -1319,4 +1319,7 @@ body {
 .nav-item__active {
   background: #131B23;
   color: #fff;
+}
+.nav-item__active .value {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

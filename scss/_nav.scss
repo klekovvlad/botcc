@@ -39,6 +39,9 @@
         &__active {
             background: $main;
             color: #fff;
+            .value {
+                color: #fff;
+            }
         }
     }
 }
