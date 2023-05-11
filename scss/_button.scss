@@ -1,0 +1,47 @@
+.buttons {
+    padding: 0px 60px;
+}
+
+.button {
+    color: $main;
+    font-size: 16px;
+    line-height: 1;
+    // padding: 12px 0px 9px;
+    width: 155px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid $main;
+    background: transparent;    
+
+    &-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &-save {
+        margin-top: 32px;
+    }
+
+    &-right {
+        margin-left: auto;
+    }
+
+    &-center {
+        margin: 0px auto;
+    }
+
+    &:hover {
+        background: $main;
+        color: #fff;
+    }
+
+    &__noactive {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+}

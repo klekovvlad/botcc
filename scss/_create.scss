@@ -1,0 +1,13 @@
+.create {
+    .row {
+        &:first-child {
+            padding: 0px 60px 32px;
+        }
+        &::after {
+            width: 922px;
+        }
+    }
+    .buttons {
+        max-width: 1042px;
+    }
+}

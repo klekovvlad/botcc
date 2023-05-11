@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Dataset</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="/" class="logo">bot.co</a>
+    </header>
+
+    <!-- Content -->
+    <main class="main">
+
+        <!-- Content title -->
+        <div class="title-wrapper">
+            <!-- Title wrapper -->
+            <div class="title-inner">
+                <!-- Title -->
+                <h1 class="title">Create Dataset</h1>
+            </div>
+        </div>
+
+
+        <div class="create">
+            <!-- inputs block -->
+            <div class="row">
+                <!-- input item -->
+                <div class="input">
+                    <div class="input-wrapper">
+                        <div class="input-name input-name__wide">
+                            <!-- input title -->
+                            Name
+                            <div class="question-icon" data-desc="Enter a clear description both understandable by humans and bots"></div>
+                        </div>
+                        <div class="input-inner">
+                            <!-- input -->
+                            <input type="text" class="input-item" placeholder="Example: question-simple">
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <!-- input-wrapper__top add this class to align the name and field on top -->
+                    <div class="input-wrapper input-wrapper__top">
+                        <div class="input-name input-name__wide">
+                            Description
+                            <div class="question-icon" data-desc="Enter a clear description both understandable by humans and bots"></div>
+                        </div>
+                        <div class="input-inner">
+                            <!-- use textarea if you don't need html block formatting -->
+                            <textarea type="text" class="input-item" placeholder="Example: question-simple"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-wrapper">
+                        <div class="input-name input-name__wide">
+                            Language
+                            <div class="question-icon" data-desc="Enter a clear description both understandable by humans and bots"></div>
+                        </div>
+                        <div class="input-inner">
+                            <!-- wrapper for input with selection -->
+                            <!-- add the select__active class to expand the list -->
+                            <div class="select">
+                                <!-- input with the selected value -->
+                                <div class="input-select input-item">N/A</div>
+                                <!-- values -->
+                                <div class="select-list">
+                                    <!-- value -->
+                                    <div class="select-item input-item">English</div>
+                                    <!-- value -->
+                                    <div class="select-item input-item">English</div>
+                                    <!-- value -->
+                                    <div class="select-item input-item">English</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-wrapper">
+                        <div class="input-name input-name__wide">Masks</div>
+                        <div class="input-inner">
+                            <!-- By clicking on the button with the class .button-mask is being created .mask-waper and inside .mask-item -->
+                            <button class="button button-mask">
+                                <img src="img/PlusCircle.svg" alt="plus" class="button-icon">
+                                Add new
+                            </button>
+                            <!-- Mask items -->
+                            <div class="mask-wrapper">
+                                <!-- mask item -->
+                                <div class="mask-item">
+                                    <input type="text" class="input-item mask-input" placeholder="Mask name">
+                                    <input type="text" class="input-item mask-input" placeholder="Mask Velue">
+                                </div>
+                                <!-- mask item -->
+                                <div class="mask-item">
+                                    <input type="text" class="input-item mask-input" placeholder="Mask name">
+                                    <input type="text" class="input-item mask-input" placeholder="Mask Velue">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button button-save button-right ">Save</button>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

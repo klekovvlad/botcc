@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Dataset/Generate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="/" class="logo">bot.co</a>
+    </header>
+
+    <!-- Content -->
+    <main class="main">
+
+        <!-- Content title -->
+        <div class="title-wrapper">
+            <!-- Title wrapper -->
+            <div class="title-inner">
+                <!-- Title -->
+                <h1 class="title">Core / Standard</h1>
+            </div>
+
+            <!-- New Member Button -->
+            <!-- <button class="button button__noactive">
+                <img src="img/PlusCircle.svg" alt="plus" class="button-icon">
+                New Member
+            </button> -->
+        </div>
+
+        <!-- navigation -->
+        <div class="content-nav nav">
+            <!-- navigation item -->
+            <!-- nav-item__active add a class to make the element active -->
+            <button class="nav-item ">Dataset Info</button>
+            <!-- navigation item -->
+            <button class="nav-item nav-item__active">View Dataset <span class="value view-value">(103,411)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Requests <span class="value requests-value">(97)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Members <span class="value members-value">(1)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Discuss</button>
+        </div>
+
+        <!-- Dataset Info Content -->
+        <!-- content-item__hidden add a class to hide the element -->
+
+
+        <!-- View Dataset Content -->
+        <div class="content-item dataset-view ">
+
+            <!-- search wrapper -->
+            <div class="row search">
+                <div class="row-wrapper">
+                    <!-- input inside class for button // input-inside__active then -->
+                    <div class="search-input input-inside input-inside__active">
+                        <!-- search input --> 
+                        <input type="text" class="input-item" value="ABCD" placeholder="What are you search?">
+                        <!-- search button -->
+                        <button class="button-inside">
+                            Search
+                        </button>
+                    </div>
+
+                    <!-- search checkbox -->
+                    <div class="search-checkbox">
+                        <!-- checkbox item -->
+                        <div class="checkbox-item">
+                            <input class="checkbox-input" type="checkbox" id="search-flagged">
+                            <label class="checkbox-label" for="search-flagged">show flagged only</label>
+                        </div>
+                        <!-- checkbox item -->
+                        <div class="checkbox-item">
+                            <input class="checkbox-input" type="checkbox" id="search-all">
+                            <label class="checkbox-label" for="search-all">select all</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-wrapper">
+                    <button class="button">
+                        <img src="img/PlusCircle.svg" alt="plus" class="button-icon">
+                        Adds a blank
+                    </button>
+                </div>
+            </div>
+
+            <!-- row__select class selects an area -->
+            <div class="row row__select ">
+                <div class="row-wrapper">
+                    <div class="input">
+                        <div class="input-wrapper">
+                            <div class="input-name">Input</div>
+                            <input type="text" class="input-item" placeholder="Example: question-simple">
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="input-name">Output</div>
+                            <!-- use dev.input-item if you need html formatting inside a text field -->
+                            <div contenteditable="true" class="input-item" placeholder="Example: questions people ask about all topics"></div>
+                        </div>
+                    </div>
+                    <div class="input-icons">
+                        <!-- data-title = text for tooltip -->
+                        <div class="input-icon input-icon__approve" data-title="Approve"></div>
+                        <div class="input-icon input-icon__reject" data-title="Reject"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-wrapper">
+                    <div class="input">
+                        <div class="input-wrapper">
+                            <div class="input-name">Input</div>
+                            <input type="text" class="input-item" placeholder="some name">
+                        </div>
+                        <div class="input-wrapper input-wrapper__top">
+                            <div class="input-name">Output</div>
+                            <!-- use dev.input-item if you need html formatting inside a text field -->
+                            <div contenteditable="true" class="input-item"></div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="input-icons">
+                        <div class="input-icon input-icon__select" data-title="Select"></div>
+                        <div class="input-icon input-icon__flag input-icon__active" data-title="Flag"></div>
+                        <div class="input-icon input-icon__edit" data-title="Edit"></div>
+                        <div class="input-icon input-icon__delete" data-title="Delete"></div>
+                    </div>
+                </div>
+
+                <!-- row__delete class allocates an area as marked for deletion -->
+                <div class="row-wrapper row__delete">
+                    <div class="input">
+                        <div class="input-wrapper">
+                            <div class="input-name">Input</div>
+                            <input type="text" class="input-item" placeholder="">
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <div class="input-name">Output</div>
+                            <input type="text" class="input-item" placeholder="">
+                        </div>
+    
+                    </div>
+    
+                    <div class="input-icons">
+                        <div class="input-icon input-icon__select" data-title="Select"></div>
+                        <div class="input-icon input-icon__flag" data-title="Flag"></div>
+                        <div class="input-icon input-icon__edit" data-title="Edit"></div>
+                        <div class="input-icon input-icon__delete input-icon__active" data-title="Delete"></div>
+                    </div>
+                </div>
+
+                <div class="row-wrapper">
+                    <div class="input">
+                        <div class="input-wrapper">
+                            <div class="input-name">Input</div>
+                            <input type="text" class="input-item" placeholder="">
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <div class="input-name">Output</div>
+                            <input type="text" class="input-item" placeholder="">
+                        </div>
+    
+                    </div>
+    
+                    <div class="input-icons">
+                        <div class="input-icon input-icon__select" data-title="Select"></div>
+                        <div class="input-icon input-icon__flag" data-title="Flag"></div>
+                        <div class="input-icon input-icon__edit" data-title="Edit"></div>
+                        <div class="input-icon input-icon__delete" data-title="Delete"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="row row__select">
+                <div class="row-wrapper">
+                    <div class="input">
+                        <div class="input-wrapper">
+                            <div class="input-name">Input</div>
+                            <input type="text" class="input-item" placeholder="some name">
+                        </div>
+                        <div class="input-wrapper input-wrapper__top">
+                            <div class="input-name">Output 1</div>
+                            <div contenteditable="true" class="input-item"></div>
+                        </div>
+                        <div class="input-wrapper input-wrapper__top">
+                            <div class="input-name">Output 2</div>
+                            <div contenteditable="true" class="input-item"></div>
+                        </div>
+                    </div>
+                    <div class="input-icons">
+                        <div class="input-icon input-icon__edit" data-title="Edit"></div>
+                        <div class="input-icon input-icon__delete" data-title="Delete"></div>
+                        <div class="input-icon input-icon__select input-icon__active" data-title="Select"></div>
+                        <div class="input-icon input-icon__flag input-icon__active" data-title="Flag"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+        <!-- popup -->
+        <!-- popup__hidden add this class to hide the popup -->
+        <!-- popup / generate -->
+        <div class="popup">
+            <div class="popup-body">
+                <!-- popup close icon -->
+                <div class="popup-close">
+                    <span></span><span></span>
+                </div>
+                <!-- popup title wrapper -->
+                <div class="popup-top">
+                    <!-- popup title -->
+                    <div class="popup-title">Generate synthetic training <br> data from current training data</div>
+                    <!-- popup subtitle -->
+                    <div class="popup-desc">To generate synthetic training data, select between 1 and 10 entries on the view data tab, and click the Generate button</div>
+                </div>
+                
+                <div class="popup-content">
+                    <button class="button button-center">Go to View Dataset</button>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html>

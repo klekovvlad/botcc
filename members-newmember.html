@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members/New member</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="/" class="logo">bot.co</a>
+    </header>
+
+    <!-- Content -->
+    <main class="main">
+
+        <!-- Content title -->
+        <div class="title-wrapper">
+            <!-- Title wrapper -->
+            <div class="title-inner">
+                <!-- Title -->
+                <h1 class="title">Core / Standard</h1>
+            </div>
+
+            <!-- New Member Button -->
+            <button class="button button__noactive">
+                <img src="img/PlusCircle.svg" alt="plus" class="button-icon">
+                New Member
+            </button>
+        </div>
+
+        <!-- navigation -->
+        <div class="content-nav nav">
+            <!-- navigation item -->
+            <!-- nav-item__active add a class to make the element active -->
+            <button class="nav-item ">Dataset Info</button>
+            <!-- navigation item -->
+            <button class="nav-item ">View Dataset <span class="value view-value">(103,411)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Requests <span class="value requests-value">(97)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item nav-item__active">Members <span class="value members-value">(1)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Discuss</button>
+        </div>
+
+        <!-- content-item__hidden add a class to hide the element -->
+
+        <!-- Members Content -->
+        <div class="content-item members">
+            <div class="row">
+                <div class="row-wrapper">
+                    <div class="member-name">Name</div>
+                    <div class="member-privileges">Privileges</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-wrapper">
+                    <div class="member-name">Marley Bob</div>
+                    <div class="member-privileges">Delete, Add, Reject</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-wrapper">
+                    <div class="member-name">Marley Bob</div>
+                    <div class="member-privileges">Delete, Add, Reject</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-wrapper">
+                    <div class="member-name">Marley Bob</div>
+                    <div class="member-privileges">Delete, Add, Reject</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-wrapper">
+                    <div class="member-name">Marley Bob</div>
+                    <div class="member-privileges">Delete, Add, Reject</div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+        <!-- popup -->
+        <!-- popup__hidden add this class to hide the popup -->
+
+        <!-- popup / new member -->
+        <div class="popup">
+            <div class="popup-body">
+                <!-- popup close icon -->
+                <div class="popup-close">
+                    <span></span><span></span>
+                </div>
+                <!-- popup title wrapper -->
+                <div class="popup-top">
+                    <!-- popup title -->
+                    <div class="popup-title">New member</div>
+                </div>
+                
+                <div class="popup-content">
+                    <div class="input input__newmember">
+                        <div class="input-wrapper">
+                            <div class="input-name">Name</div>
+                            <input type="text" class="input-item" placeholder="Enter the name of member">
+                        </div>
+                    </div>
+                    <div class="input input__newmember">
+                        <div class="input-wrapper input-wrapper__top">
+                            <div class="input-name">Privileges</div>
+                            <div class="input-checkboxs">
+                                <!-- checkbox item -->
+                                <div class="checkbox-item">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-all" checked>
+                                    <label class="checkbox-label" for="privileges-all">All</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <!-- add the checkbox-item__noactive class to make the item inactive -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-changeinfo">
+                                    <label class="checkbox-label" for="privileges-changeinfo">Change info</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-addinfo">
+                                    <label class="checkbox-label" for="privileges-addinfo">Add info</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-delete">
+                                    <label class="checkbox-label" for="privileges-delete">Delete</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-flag">
+                                    <label class="checkbox-label" for="privileges-flag">Flag</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-edit">
+                                    <label class="checkbox-label" for="privileges-edit">Edit</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-approve">
+                                    <label class="checkbox-label" for="privileges-approve">Approve</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-reject">
+                                    <label class="checkbox-label" for="privileges-reject">Reject</label>
+                                </div>
+                                <!-- checkbox item -->
+                                <div class="checkbox-item checkbox-item__noactive">
+                                    <input class="checkbox-input" type="checkbox" id="privileges-members">
+                                    <label class="checkbox-label" for="privileges-members">Add members</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-bottom">
+                    <button class="button button-right">Add member</button>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

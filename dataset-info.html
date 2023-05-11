@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Info</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="/" class="logo">bot.co</a>
+    </header>
+
+    <!-- Content -->
+    <main class="main">
+
+        <!-- Content title -->
+        <div class="title-wrapper">
+            <!-- Title wrapper -->
+            <div class="title-inner">
+                <!-- Title -->
+                <h1 class="title">Core / Standard</h1>
+            </div>
+
+            <!-- New Member Button -->
+            <!-- <button class="button button__noactive">
+                <img src="img/PlusCircle.svg" alt="plus" class="button-icon">
+                New Member
+            </button> -->
+        </div>
+
+        <!-- navigation -->
+        <div class="content-nav nav">
+            <!-- navigation item -->
+            <!-- nav-item__active add a class to make the element active -->
+            <button class="nav-item nav-item__active">Dataset Info</button>
+            <!-- navigation item -->
+            <button class="nav-item ">View Dataset <span class="value view-value">(103,411)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Requests <span class="value requests-value">(97)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Members <span class="value members-value">(1)</span></button>
+            <!-- navigation item -->
+            <button class="nav-item">Discuss</button>
+        </div>
+
+        <!-- Dataset Info Content -->
+        <!-- content-item__hidden add a class to hide the element -->
+        <div class="content-item dataset-information">
+            <!-- this element restricts the block and adds a border from below -->
+            <div class="row">
+
+                <div class="input">
+                    <div class="input-wrapper">
+                        <!-- the input-name__wide class increases the width of the block with the name -->
+                        <div class="input-name input-name__wide">
+                            <!-- input title -->
+                            Name
+                            <!-- input info icon -->
+                            <!-- data-desc - text inside the tooltip -->
+                            <div class="question-icon" data-desc="Enter a clear description both understandable by humans and bots"></div>
+                        </div>
+                        <!-- the input-inner class fixes the width of the block with input -->
+                        <div class="input-inner">
+                            <input type="text" class="input-item" placeholder="Example: question-simple">
+                        </div>
+                        <!-- the button-right class aligns the button to the right side -->
+                        <button class="button button-right">Edit</button>
+                    </div>
+                </div>
+                
+                <div class="input">
+                    <!-- input with textarea -->
+                    <div class="input-wrapper input-wrapper__top">
+                        <div class="input-name input-name__wide">
+                            <!-- input title -->
+                            Description
+                            <!-- data-desc - text inside the tooltip -->
+                            <div class="question-icon" data-desc="Enter a clear description both understandable by humans and bots"></div>
+                        </div>
+                        <div class="input-inner">
+                            <textarea class="input-item" placeholder="Example: questions people ask about all topics"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input">
+                    <div class="input-wrapper">
+                        <div class="input-name input-name__wide">
+                            Language
+                            <div class="question-icon" data-desc="Enter a clear description both understandable by humans and bots"></div>
+                        </div>
+                        <div class="input-inner">
+                            <!-- wrapper for input with selection -->
+                            <!-- add the select__active class to expand the list -->
+                            <div class="select">
+                                <!-- input with the selected value -->
+                                <div class="input-select input-item">N/A</div>
+                                <!-- values -->
+                                <div class="select-list">
+                                    <!-- value -->
+                                    <div class="select-item input-item">English</div>
+                                    <!-- value -->
+                                    <div class="select-item input-item">English</div>
+                                    <!-- value -->
+                                    <div class="select-item input-item">English</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input">
+                    <div class="input-wrapper">
+                        <div class="input-name input-name__wide">Masks</div>
+                        <div class="input-inner">
+                            <!-- By clicking on the button with the class .button-mask is being created .mask-waper and inside .mask-item -->
+                            <button class="button button-mask">
+                                <img src="img/PlusCircle.svg" alt="plus" class="button-icon">
+                                Add new
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input">
+                    <div class="input-wrapper input-wrapper__top">
+                        <div class="input-name input-name__wide">Import</div>
+                        <div class="input-inner">
+                            <!-- wrapper for input with a button inside -->
+                            <div class="input-inside">
+                                <!-- a field with a button inside -->
+                                <input type="text" class="input-item" placeholder="Import JSON from URL">
+                                <!-- button inside input -->
+                                <button class="button-inside">Import</button>
+                            </div>
+                            <button class="button">
+                                <img src="img/PlusCircle.svg" alt="plus" class="button-icon">
+                                JSON from File
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-wrapper input-wrapper__top">
+                    <div class="input-name input-name__wide">Generate</div>
+                    <div class="input-inner">
+                        <!-- the wrapper for the button and its description on the right -->
+                        <div class="input-button">
+                            <!-- button -->
+                            <button class="button">Pairs data from file</button>
+                            <!-- button description -->
+                            <div class="button-desc">Supports text, html, PDF, Word</div>
+                        </div>
+                        <div class="input-button">
+                            <button class="button">Pairs data from URL</button>
+                            <div class="button-desc">Supports text, html, PDF, Word</div>
+                        </div>
+                        <div class="input-button">
+                            <button class="button">Synthetic data</button>
+                            <div class="button-desc">Generate synthetic training data from current training data</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="input-wrapper">
+                    <div class="input-name input-name__wide">Export</div>
+                    <div class="input-inner">
+                        <button class="button">Export as JSON</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+</html>

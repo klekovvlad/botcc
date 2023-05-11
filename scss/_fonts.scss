@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Consolas';
+    src: url('../fonts/consolas.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    font-family: Consolas, serif;
+    font-weight: 400;
+}

@@ -1,0 +1,68 @@
+.info {
+    &-wrapper {
+        position: relative;
+        &:hover {
+            .info-desc {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &-icon {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        background: url(../img/Info.svg) no-repeat center;
+        background-size: cover;
+        filter: brightness(0) saturate(100%) invert(48%) sepia(7%) saturate(560%) hue-rotate(187deg) brightness(95%) contrast(83%);
+        &:hover {
+            filter: none;
+        }
+    }
+    &-desc {
+        position: absolute;
+        padding: 10px;
+        background: $infobg;
+        top: 0;
+        right: 0;
+        transform: translate(0, calc(-100% - 4px));
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        min-width: max-content;
+        color: #fff;
+        font-size: 12px;
+        line-height: 133%;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &-views,
+    &-downloads {
+        padding-left: 20px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    &-views {
+        &::before {
+            background: url(../img/Eye.svg);
+        }
+    }
+    &-downloads {
+        &::before {
+            background: url(../img/DownloadSimple.svg);
+        }
+    }
+}
